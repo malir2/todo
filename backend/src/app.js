@@ -8,7 +8,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://remember-todos.netlify.app"], // Allow both local and production origins
+    credentials: true, // Allow cookies and credentials
+  })
+);
 
 app.use(
   session({
