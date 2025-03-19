@@ -102,7 +102,7 @@ function Register() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="border-0 outline-0 w-[100%] px-4 py-2 bg-white/50 backdrop-blur-xl rounded-2xl mt-3"
-              placeholder="Enter your username"
+              placeholder="Enter your email"
             />
             {error === "Email is required" && (
               <p className="text-[0.8rem] text-red-600">Email is required</p>
