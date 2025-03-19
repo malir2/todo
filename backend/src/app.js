@@ -1,7 +1,7 @@
 import express from "express";
 import postRouter from "./router/postRoute.js";
 import session from "express-session";
-import userRouter from "./router/UserRoute.js";
+import userRouter from "./router/userRoute.js";
 import cors from "cors";
 
 const app = express();
